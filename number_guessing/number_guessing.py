@@ -79,6 +79,9 @@ while not won:
         if guess == "":
             print("=====================\nSee you later.")
             break
+        elif int(guess) < 1 or int(guess) > 100:
+            print("I said a number between 1 and 100!")
+            continue
         else:
             guess = int(guess)
         check_guess(guess)
