@@ -16,3 +16,7 @@ Project 3 - A dice rolling program - FINISHED
 Project 4 - Hangman - FINISHED
 
 	The game gives you a random word from a list (these are imported from a txt file), and you can play a hangman game with that word.
+
+Project 5 - Contact book - WORK IN PROGRESS
+
+	A contact book, where you can input, store and find contact information. It uses a simle database.
