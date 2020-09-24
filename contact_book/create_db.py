@@ -26,11 +26,12 @@ def main():
     
     conn = create_connection(database)
     if conn is not None:
-        print("Connection is created.")
+        print("Database connected.\n")
         create_tables(conn, name_table)
         create_tables(conn, data_table)
+        conn.close()
     else:
-        print("Connection failed.")
+        print("Connection to database failed.")
 
 if __name__ == "__main__":
     main()

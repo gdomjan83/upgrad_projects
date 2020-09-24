@@ -24,10 +24,11 @@ def main():
     conn = create_connection(database)
 
     if conn is not None:
-        print("Connection is created.")
+        print("Database opened.")
         print_all_data(conn) 
+        conn.close()
     else:
-        print("Connection failed.")
+        print("Connection to database failed.")
 
 if __name__ == "__main__":
     main()

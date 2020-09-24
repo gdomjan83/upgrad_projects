@@ -27,7 +27,7 @@ def main():
     conn = create_connection(database)
 
     if conn is not None:
-        print("Connection is created.")
+        print("Database opened.\n")
 
         name = []
         name.append(input("Enter first name: "))
@@ -37,9 +37,10 @@ def main():
         data = []
         data.append(input("Enter phone number: "))
         data.append(input("Enter email address: "))
-        insert_data(conn, tuple(data))        
+        insert_data(conn, tuple(data))  
+        conn.close()      
     else:
-        print("Connection failed.")
+        print("Connection to database failed.")
 
 if __name__ == "__main__":
     main()
